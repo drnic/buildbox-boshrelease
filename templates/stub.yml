@@ -1,0 +1,13 @@
+---
+meta:
+  environment: NAME
+  dns_root: microbosh
+  network_name: buildbox1
+  security_groups:
+    - buildbox
+
+director_uuid: PLACEHOLDER-DIRECTOR-UUID
+
+releases:
+  - name: buildbox
+    version: latest
