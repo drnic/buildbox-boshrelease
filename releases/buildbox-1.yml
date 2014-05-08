@@ -1,0 +1,16 @@
+---
+packages:
+- name: buildbox
+  version: 1
+  sha1: e142aad1947f4669f83d30fb44e85bb5ac24ebdf
+  fingerprint: c39946a129e3a8fc5403501e20b22f32a4c4ff3f
+  dependencies: []
+jobs:
+- name: buildbox
+  version: 1
+  fingerprint: 4931750ca23baf9ad2e157d7abd8df954b3e6c25
+  sha1: dacb49160b2bfaa49fbaff08cc40190912a1f52f
+commit_hash: b17f0694
+uncommitted_changes: true
+name: buildbox
+version: 1
