@@ -17,10 +17,10 @@ case $1 in
       --access-token $BUILDBOX_AGENT_ACCESS_TOKEN \
       --bootstrap-script $JOB_DIR/bin/bootstrap.sh \
          >>$LOG_DIR/$JOB_NAME.stdout.log \
-         2>>$LOG_DIR/$JOB_NAME.stderr.log
+         2>>$LOG_DIR/$JOB_NAME.stderr.log &
 
-    # store pid in $PIDFILE
     echo $! > $PIDFILE
+
     ;;
 
   stop)
