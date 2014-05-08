@@ -1,5 +1,6 @@
 meta:
   environment: (( merge ))
+  instances: 1
   dns_root: (( merge ))
   security_groups: (( merge ))
   network_name: (( merge ))
@@ -9,17 +10,10 @@ meta:
     version: latest
 
 jobs:
-  - name: buildbox_leader_z1
-    instances: 1
-    networks:
-      - name: (( meta.network_name ))
   - name: buildbox_z1
-    instances: 2
+    instances: (( meta.instances ))
     networks:
       - name: (( meta.network_name ))
-    properties:
-      buildbox:
-        leader_address: (( "0.buildbox-leader-z1.buildbox1." meta.environment "." meta.dns_root ))
 
 compilation:
   cloud_properties:
@@ -31,9 +25,6 @@ resource_pools:
       instance_type: m1.small
 
 networks:
-  - name: floating
-    type: vip
-    cloud_properties: {}
   - name: (( meta.network_name ))
     type: dynamic
     cloud_properties:

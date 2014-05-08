@@ -51,4 +51,3 @@ spiff merge \
   $* > $tmpdir/$NAME-manifest.yml
 
 bosh deployment $tmpdir/$NAME-manifest.yml
-bosh status

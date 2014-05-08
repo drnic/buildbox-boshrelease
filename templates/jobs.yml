@@ -1,5 +1,6 @@
 meta:
   environment: ~
+  access_token: (( merge ))
 
 update:
   canaries: 1
@@ -9,21 +10,16 @@ update:
   serial: false
 
 jobs:
-  - name: buildbox_leader_z1
-    template: buildbox
-    instances: 0
-    resource_pool: small_z1
-    networks: (( merge ))
   - name: buildbox_z1
     template: buildbox
-    instances: 0
+    instances: 1
     resource_pool: small_z1
     networks: (( merge ))
     update:
       canaries: 10
     properties:
       buildbox:
-        leader_address: (( merge ))
+        access_token: (( meta.access_token ))
 
 networks: (( merge ))
 
