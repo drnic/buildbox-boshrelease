@@ -1,5 +1,7 @@
+<% if false %>
 check process buildbox
   with pidfile /var/vcap/sys/run/buildbox/buildbox.pid
   start program "/var/vcap/jobs/buildbox/bin/monit_debugger buildbox_ctl '/var/vcap/jobs/buildbox/bin/buildbox_ctl start'"
   stop program "/var/vcap/jobs/buildbox/bin/monit_debugger buildbox_ctl '/var/vcap/jobs/buildbox/bin/buildbox_ctl stop'"
   group vcap
+<% end %>

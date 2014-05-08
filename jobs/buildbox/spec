@@ -1,6 +1,7 @@
 ---
 name: buildbox
-packages: []
+packages:
+- buildbox
 templates:
   bin/monit_debugger: bin/monit_debugger
   bin/buildbox_ctl: bin/buildbox_ctl

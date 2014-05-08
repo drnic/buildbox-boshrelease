@@ -1,0 +1,5 @@
+---
+name: buildbox
+dependencies: []
+files:
+- buildbox/buildbox-agent-linux-amd64-v0.2-beta.1.tar.gz
