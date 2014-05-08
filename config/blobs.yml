@@ -1,1 +1,5 @@
---- {}
+---
+buildbox/buildbox-agent-linux-amd64-v0.2-beta.1.tar.gz:
+  object_id: e0f6f15e-1e33-4da2-aa00-678bae37dcc4
+  sha: 3b271198ee38469881ca1b745fe6cee8bc88f92c
+  size: 7009269
